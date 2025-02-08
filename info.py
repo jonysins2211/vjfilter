@@ -13,7 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '16013849'))
 API_HASH = environ.get('API_HASH', 'c8686adc1a0c7cd17f2201c40123ce91')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6942886220:AAFoBXWCLymc28olggObqALwaqVEaMqB-Vk")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -59,12 +59,12 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cluster:yZ8tvosjuklgz4
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 
-MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
 O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
 F_DB_URI = environ.get('F_DB_URI', "")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://cluster:rdYi5Ag9JCjYA11T@cluster0.efj5n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db is for File Data Store When First Db Is Going To Be Full.
+S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
